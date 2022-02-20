@@ -86,38 +86,43 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="【菜鸡教程】Windows-10-配置Java环境变量（JAVA-HOME-Path）"><a href="#【菜鸡教程】Windows-10-配置Java环境变量（JAVA-HOME-Path）" class="headerlink" title="【菜鸡教程】Windows 10 配置Java环境变量（JAVA_HOME+Path）"></a>【菜鸡教程】Windows 10 配置Java环境变量（JAVA_HOME+Path）</h1><blockquote>
+        <blockquote>
 <p>Windows 10</p>
 <p>Java 8.0.1720.11</p>
 </blockquote>
 <h3 id="一、为什么要配置path？"><a href="#一、为什么要配置path？" class="headerlink" title="一、为什么要配置path？"></a><strong>一、为什么要配置path？</strong></h3><p>Path的意思就是路，<strong>设置Path就是给计算机指路</strong>，告诉计算机当我们要使用Java的时候，它知道去哪里找到这个玩意儿执行。</p>
 <p>没有设置的话，在dos系统里随便一个目录输入java指令，计算机会傻乎乎地告诉你：我不认识这个东西，我迷路了我找不到去哪里执行java：</p>
-<p><img src="C:\Users\Carol\AppData\Roaming\Typora\typora-user-images\image-20220220133619344.png" alt="image-20220220133619344"></p>
+<img src="https://res.cloudinary.com/carolleo0812/image/upload/v1645358323/image-20220220133619344_jjspp1.png" alt="https://res.cloudinary.com/carolleo0812/image/upload/v1645358323/image-20220220133619344_jjspp1.png" style="zoom:50%;" />
+
 <p>只有当我们亲自带计算机到目的地即<code>安装了java的路径</code>的时候，他到了就能执行命令：</p>
-<p><img src="C:\Users\Carol\AppData\Roaming\Typora\typora-user-images\image-20220220134228643.png" alt="image-20220220134228643"></p>
+<img src="https://res.cloudinary.com/carolleo0812/image/upload/v1645358323/image-20220220134228643_o1hbmq.png" alt="https://res.cloudinary.com/carolleo0812/image/upload/v1645358323/image-20220220134228643_o1hbmq.png" style="zoom:50%;" />
+
 <p>但是我们也不能每次都带计算机过去！太费事了！所以要设置Path(路径)，给计算机设置好路线，以后它就懂自己过去了，一劳永逸。</p>
 <h3 id="二、Windows10如何配置JAVA-HOME和Path"><a href="#二、Windows10如何配置JAVA-HOME和Path" class="headerlink" title="二、Windows10如何配置JAVA_HOME和Path"></a><strong>二、Windows10如何配置JAVA_HOME和Path</strong></h3><p>（1）找到Java安装的目录</p>
 <p>如果安装过程中是选择默认路径，一般都是在C盘的Program Files。</p>
 <p>例如：<code>C:\Program Files\Java\jdk1.8.0_172</code></p>
 <p>（jdk后面的数字可能有变，对应的是自己下载的版本号）</p>
-<p><img src="C:\Users\Carol\AppData\Roaming\Typora\typora-user-images\image-20220220131320137.png" alt="image-20220220131320137"></p>
+<img src="https://res.cloudinary.com/carolleo0812/image/upload/v1645358322/image-20220220131320137_xtmfed.png" alt="https://res.cloudinary.com/carolleo0812/image/upload/v1645358322/image-20220220131320137_xtmfed.png" style="zoom:50%;" />
+
 <p>如果安装JDK的过程中更改了路径的话，就要去自己当时设定的目录找。</p>
 <p>复制好这个路径，下一步用。</p>
 <p>（2）开始设置（配置）</p>
-<p>左下角Windows键 - 设置 - 系统<img src="C:\Users\Carol\AppData\Roaming\Typora\typora-user-images\image-20220220132010298.png" alt="image-20220220132010298"></p>
+<p>左下角Windows键 - 设置 - 系统</p>
+<img src="https://res.cloudinary.com/carolleo0812/image/upload/v1645358322/image-20220220132010298_uuigjx.png" alt="https://res.cloudinary.com/carolleo0812/image/upload/v1645358322/image-20220220132010298_uuigjx.png" style="zoom:50%;" />
+
 <p>往下拉，找到 <code>关于</code></p>
-<img src="C:\Users\Carol\AppData\Roaming\Typora\typora-user-images\image-20220220132103051.png" alt="image-20220220132103051" style="zoom:50%;" />
+<img src="https://res.cloudinary.com/carolleo0812/image/upload/v1645358321/image-20220220131909222_lxjqtd.png" alt="https://res.cloudinary.com/carolleo0812/image/upload/v1645358321/image-20220220131909222_lxjqtd.png" style="zoom:50%;" />
 
 <p>右边，点击 <code>高级系统设置</code></p>
-<img src="C:\Users\Carol\AppData\Roaming\Typora\typora-user-images\image-20220220132135460.png" alt="image-20220220132135460" style="zoom:67%;" />
+<img src="https://res.cloudinary.com/carolleo0812/image/upload/v1645358322/image-20220220132135460_okjwju.png" alt="https://res.cloudinary.com/carolleo0812/image/upload/v1645358322/image-20220220132135460_okjwju.png" style="zoom:50%;" />
 
 <p>点击<code>环境变量</code></p>
-<img src="C:\Users\Carol\AppData\Roaming\Typora\typora-user-images\image-20220220132226426.png" alt="image-20220220132226426" style="zoom:50%;" />
+<img src="https://res.cloudinary.com/carolleo0812/image/upload/v1645358322/image-20220220132226426_bvbzqc.png" alt="https://res.cloudinary.com/carolleo0812/image/upload/v1645358322/image-20220220132226426_bvbzqc.png" style="zoom:50%;" />
 
 
 
 <p>在 <code>系统变量</code> 选择 <code>新建</code></p>
-<img src="C:\Users\Carol\AppData\Roaming\Typora\typora-user-images\image-20220220132541623.png" alt="image-20220220132541623" style="zoom: 50%;" />
+<img src="https://res.cloudinary.com/carolleo0812/image/upload/v1645358322/image-20220220132541623_wgquwp.png" alt="https://res.cloudinary.com/carolleo0812/image/upload/v1645358322/image-20220220132541623_wgquwp.png" style="zoom:50%;" />
 
 
 
@@ -126,17 +131,20 @@
 <p>（设置地图的名字，就是Java的家，让计算机去找Java）</p>
 <p>变量值：<code>C:\Program Files\Java\jdk1.8.0_172</code> </p>
 <p>（刚刚复制的路径，告诉计算机怎么过去找Java）</p>
-<img src="C:\Users\Carol\AppData\Roaming\Typora\typora-user-images\image-20220220133233147.png" alt="image-20220220133233147" style="zoom:50%;" />
+<img src="https://res.cloudinary.com/carolleo0812/image/upload/v1645358323/image-20220220133233147_tc5ly9.png" alt="https://res.cloudinary.com/carolleo0812/image/upload/v1645358323/image-20220220133233147_tc5ly9.png" style="zoom:50%;" />
 
 <p>设置完就看到了JAVA_HOME这个系统变量</p>
-<p><img src="C:\Users\Carol\AppData\Roaming\Typora\typora-user-images\image-20220220133255460.png" alt="image-20220220133255460"></p>
+<img src="https://res.cloudinary.com/carolleo0812/image/upload/v1645358323/image-20220220133255460_epitlc.png" alt="https://res.cloudinary.com/carolleo0812/image/upload/v1645358323/image-20220220133255460_epitlc.png" style="zoom:50%;" />
+
+
+
 <p>双击 <code>Path</code></p>
-<img src="C:\Users\Carol\AppData\Roaming\Typora\typora-user-images\image-20220220134910392.png" alt="image-20220220134910392" style="zoom:50%;" />
+<img src="https://res.cloudinary.com/carolleo0812/image/upload/v1645358323/image-20220220134910392_yn4dme.png" alt="https://res.cloudinary.com/carolleo0812/image/upload/v1645358323/image-20220220134910392_yn4dme.png" style="zoom:50%;" />
 
 
 
 <p>新建</p>
-<img src="C:\Users\Carol\AppData\Roaming\Typora\typora-user-images\image-20220220135812768.png" alt="image-20220220135812768" style="zoom:50%;" />
+<img src="https://res.cloudinary.com/carolleo0812/image/upload/v1645358323/image-20220220135812768_biek8u.png" alt="https://res.cloudinary.com/carolleo0812/image/upload/v1645358323/image-20220220135812768_biek8u.png" style="zoom:50%;" />
 
 
 
@@ -144,7 +152,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%JAVA_HOME%\bin</span><br></pre></td></tr></table></figure>
 
 <p>确定保存</p>
-<img src="C:\Users\Carol\AppData\Roaming\Typora\typora-user-images\image-20220220135921424.png" alt="image-20220220135921424" style="zoom:50%;" />
+<img src="https://res.cloudinary.com/carolleo0812/image/upload/v1645358323/image-20220220135921424_fsn8ej.png" alt="https://res.cloudinary.com/carolleo0812/image/upload/v1645358323/image-20220220135921424_fsn8ej.png" style="zoom:50%;" />
 
 
 
@@ -156,11 +164,11 @@
 <p>最后弄了好久，终于！</p>
 <p>原来是Windows 10在编辑Path环境变量的时候，看到的教程说的是，输入 <code>%JAVA_HOME%\bin;</code> （多了个;）</p>
 <p>后面明白了这是因为Windows 7 或者更低版本，窗口是这样的：</p>
-<img src="C:\Users\Carol\AppData\Roaming\Typora\typora-user-images\image-20220220161612955.png" alt="image-20220220161612955" style="zoom:50%;" />
+<img src="https://res.cloudinary.com/carolleo0812/image/upload/v1645358323/image-20220220161612955_wlipae.png" alt="https://res.cloudinary.com/carolleo0812/image/upload/v1645358323/image-20220220161612955_wlipae.png" style="zoom:50%;" />
 
 <p>需要我们人为地添加“;”分号进行区分。</p>
 <p>但是Windows 10的窗口变得类似表格，数据是一行一行地自己排列下来，而不是一条输入框，所以不需要加这个;</p>
-<img src="C:\Users\Carol\AppData\Roaming\Typora\typora-user-images\image-20220220162001513.png" alt="image-20220220162001513" style="zoom:50%;" />
+<img src="https://res.cloudinary.com/carolleo0812/image/upload/v1645358323/image-20220220162001513_m9i006.png" alt="https://res.cloudinary.com/carolleo0812/image/upload/v1645358323/image-20220220162001513_m9i006.png" style="zoom:50%;" />
 
 
 
@@ -170,7 +178,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/02/20/%E3%80%90%E8%8F%9C%E9%B8%A1%E6%95%99%E7%A8%8B%E3%80%91Windows%2010%20%E9%85%8D%E7%BD%AEJava%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%EF%BC%88JAVA_HOME+Path%EF%BC%89/" data-id="ckzv7ekrr00011ojgcyt1au5f" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/02/20/%E3%80%90%E8%8F%9C%E9%B8%A1%E6%95%99%E7%A8%8B%E3%80%91Windows%2010%20%E9%85%8D%E7%BD%AEJava%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%EF%BC%88JAVA_HOME+Path%EF%BC%89/" data-id="ckzv842c90001uojgad0q0h4q" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WIN10-Java/" rel="tag">WIN10 Java</a></li></ul>
@@ -221,7 +229,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/02/20/hello-world/" data-id="ckzv7ekrb00001ojgaii0f41y" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/02/20/hello-world/" data-id="ckzv842c40000uojgg5w8coax" class="article-share-link">Share</a>
       
       
     </footer>
