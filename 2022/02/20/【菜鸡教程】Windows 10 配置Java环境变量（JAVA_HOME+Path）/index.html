@@ -5,15 +5,36 @@
   
 
   
-  <title>Hexo</title>
+  <title>【菜鸡教程】Windows 10 配置Java环境变量（JAVA_HOME+Path） | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="【菜鸡教程】Windows 10 配置Java环境变量（JAVA_HOME+Path） Windows 10 Java 8.0.1720.11  一、为什么要配置path？Path的意思就是路，设置Path就是给计算机指路，告诉计算机当我们要使用Java的时候，它知道去哪里找到这个玩意儿执行。 没有设置的话，在dos系统里随便一个目录输入java指令，计算机会傻乎乎地告诉你：我不认识这个东西，我迷">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【菜鸡教程】Windows 10 配置Java环境变量（JAVA_HOME+Path）">
+<meta property="og:url" content="http://example.com/2022/02/20/%E3%80%90%E8%8F%9C%E9%B8%A1%E6%95%99%E7%A8%8B%E3%80%91Windows%2010%20%E9%85%8D%E7%BD%AEJava%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%EF%BC%88JAVA_HOME+Path%EF%BC%89/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="【菜鸡教程】Windows 10 配置Java环境变量（JAVA_HOME+Path） Windows 10 Java 8.0.1720.11  一、为什么要配置path？Path的意思就是路，设置Path就是给计算机指路，告诉计算机当我们要使用Java的时候，它知道去哪里找到这个玩意儿执行。 没有设置的话，在dos系统里随便一个目录输入java指令，计算机会傻乎乎地告诉你：我不认识这个东西，我迷">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:/Users/Carol/AppData/Roaming/Typora/typora-user-images/image-20220220133619344.png">
+<meta property="og:image" content="c:/Users/Carol/AppData/Roaming/Typora/typora-user-images/image-20220220134228643.png">
+<meta property="og:image" content="c:/Users/Carol/AppData/Roaming/Typora/typora-user-images/image-20220220131320137.png">
+<meta property="og:image" content="c:/Users/Carol/AppData/Roaming/Typora/typora-user-images/image-20220220132010298.png">
+<meta property="og:image" content="c:/Users/Carol/AppData/Roaming/Typora/typora-user-images/image-20220220132103051.png">
+<meta property="og:image" content="c:/Users/Carol/AppData/Roaming/Typora/typora-user-images/image-20220220132135460.png">
+<meta property="og:image" content="c:/Users/Carol/AppData/Roaming/Typora/typora-user-images/image-20220220132226426.png">
+<meta property="og:image" content="c:/Users/Carol/AppData/Roaming/Typora/typora-user-images/image-20220220132541623.png">
+<meta property="og:image" content="c:/Users/Carol/AppData/Roaming/Typora/typora-user-images/image-20220220133233147.png">
+<meta property="og:image" content="c:/Users/Carol/AppData/Roaming/Typora/typora-user-images/image-20220220133255460.png">
+<meta property="og:image" content="c:/Users/Carol/AppData/Roaming/Typora/typora-user-images/image-20220220134910392.png">
+<meta property="og:image" content="c:/Users/Carol/AppData/Roaming/Typora/typora-user-images/image-20220220135812768.png">
+<meta property="og:image" content="c:/Users/Carol/AppData/Roaming/Typora/typora-user-images/image-20220220135921424.png">
+<meta property="og:image" content="c:/Users/Carol/AppData/Roaming/Typora/typora-user-images/image-20220220161612955.png">
+<meta property="og:image" content="c:/Users/Carol/AppData/Roaming/Typora/typora-user-images/image-20220220162001513.png">
+<meta property="article:published_time" content="2022-02-20T10:13:52.000Z">
+<meta property="article:modified_time" content="2022-02-20T11:45:02.741Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="WIN10 Java">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/Carol/AppData/Roaming/Typora/typora-user-images/image-20220220133619344.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -62,9 +83,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="windows-【菜鸡教程】Windows 10 配置Java环境变量（JAVA_HOME+Path）" class="article article-type-windows" itemscope itemprop="blogPost">
+        <section id="main"><article id="windows-【菜鸡教程】Windows 10 配置Java环境变量（JAVA_HOME+Path）" class="article article-type-windows" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2022/02/20/%E3%80%90%E8%8F%9C%E9%B8%A1%E6%95%99%E7%A8%8B%E3%80%91Windows%2010%20%E9%85%8D%E7%BD%AEJava%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%EF%BC%88JAVA_HOME+Path%EF%BC%89/" class="article-date">
   <time datetime="2022-02-20T10:13:52.000Z" itemprop="datePublished">2022-02-20</time>
@@ -77,8 +96,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/02/20/%E3%80%90%E8%8F%9C%E9%B8%A1%E6%95%99%E7%A8%8B%E3%80%91Windows%2010%20%E9%85%8D%E7%BD%AEJava%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%EF%BC%88JAVA_HOME+Path%EF%BC%89/">【菜鸡教程】Windows 10 配置Java环境变量（JAVA_HOME+Path）</a>
+    <h1 class="article-title" itemprop="name">
+      【菜鸡教程】Windows 10 配置Java环境变量（JAVA_HOME+Path）
     </h1>
   
 
@@ -178,60 +197,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/02/20/hello-world/" class="article-date">
-  <time datetime="2022-02-20T10:02:57.177Z" itemprop="datePublished">2022-02-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/02/20/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2022/02/20/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/02/20/hello-world/" data-id="ckzv7ekrb00001ojgaii0f41y" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
